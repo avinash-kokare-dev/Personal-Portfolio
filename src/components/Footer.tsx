@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin , FaEnvelope } from 'react-icons/fa';
 import styles from '../styles/Footer.module.scss';
 
 const Footer = () => {

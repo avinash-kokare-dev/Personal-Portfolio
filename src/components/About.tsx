@@ -59,7 +59,7 @@ const AboutSection = () => {
             <motion.p variants={itemVariants}>
               Hi, I'm Avinash, a Computer Science student passionate about full-stack development. I specialize in building responsive, user-friendly web applications using modern technologies like <strong>React, Node.js, SQL, and Next.js</strong>. I enjoy bridging design and technology to create impactful digital solutions that solve real-world problems.
 
-              Currently, I’m actively seeking internship opportunities where I can contribute, learn from real-world challenges, and grow as a developer.
+              Currently, I&apos;m actively seeking internship opportunities where I can contribute, learn from real-world challenges, and grow as a developer.
             </motion.p>
 
             <div className={styles.skills}>
