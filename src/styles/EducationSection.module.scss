@@ -1,0 +1,161 @@
+.education {
+    padding: 6rem 2rem;
+    background-color: var(--background-alt);
+    position: relative;
+
+    @media (max-width: 768px) {
+        padding: 4rem 1rem;
+    }
+}
+
+.sectionTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    color: var(--text-color);
+
+    span {
+        color: var(--primary-color);
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+}
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 30px;
+        height: 100%;
+        width: 2px;
+        background: linear-gradient(to bottom,
+                var(--primary-color),
+                var(--secondary-color));
+
+        @media (max-width: 768px) {
+            left: 20px;
+        }
+    }
+}
+
+.timelineItem {
+    position: relative;
+    padding-left: 80px;
+    margin-bottom: 3rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+        padding-left: 60px;
+    }
+}
+
+.timelineDot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,
+            var(--primary-color),
+            var(--secondary-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 0 5px 20px rgba(101, 87, 255, 0.3);
+
+    @media (max-width: 768px) {
+        width: 50px;
+        height: 50px;
+        font-size: 1rem;
+    }
+}
+
+.educationCard {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+
+    @media (max-width: 768px) {
+        padding: 1.5rem;
+    }
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    h3 {
+        font-size: 1.3rem;
+        color: var(--text-color);
+        margin: 0;
+
+        @media (max-width: 768px) {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.scoreBadge {
+    background: rgba(101, 87, 255, 0.1);
+    color: var(--primary-color);
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.institution {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    &::before {
+        content: '🏛️';
+        font-size: 0.9em;
+    }
+}
+
+.description {
+    color: var(--text-color-light);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.highlightPill {
+    background: rgba(101, 87, 255, 0.1);
+    color: var(--primary-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}

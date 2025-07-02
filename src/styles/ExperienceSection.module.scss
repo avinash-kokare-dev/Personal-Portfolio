@@ -1,0 +1,166 @@
+.experience {
+  margin: 4rem 0;
+  background-color: #f8f9fa;
+  position: relative;
+  scroll-margin-top: 6rem;
+
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    color: #212529;
+
+    span {
+      color: #0d6efd;
+    }
+  }
+
+  @media screen {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}
+
+.timeline {
+  margin: 1rem;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom,
+        #0d6efd,
+        #6f42c1);
+
+    @media (max-width: 768px) {
+      left: 30px;
+    }
+  }
+}
+
+.experienceCard {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 3rem;
+  position: relative;
+  border: 1px solid #e9ecef;
+
+  @media (max-width: 768px) {
+    min-width: 100%;
+  }
+
+  &:nth-child(odd) {
+    margin-right: auto;
+    width: calc(50% - 80px);
+    margin-left: 40px;
+
+    @media (max-width: 768px) {
+      width: calc(100% - 70px);
+      margin-left: 0px;
+    }
+  }
+
+  &:nth-child(even) {
+    margin-left: auto;
+    width: calc(50% - 80px);
+    margin-right: 40px;
+
+    @media (max-width: 768px) {
+      width: calc(100% - 70px);
+      margin-right: 0px;
+    }
+  }
+}
+
+.companyHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  h3 {
+    font-size: 1.3rem;
+    color: #212529;
+    margin: 0;
+  }
+}
+
+.companyIcon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg,
+      #0d6efd,
+      #6f42c1);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-left: auto;
+
+  svg {
+    color: #0d6efd;
+  }
+}
+
+
+
+.description {
+  color: #212529;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.highlights {
+  padding-left: 1.2rem;
+  margin: 0;
+
+  li {
+    color: #495057;
+    margin-bottom: 0.8rem;
+    position: relative;
+    line-height: 1.6;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: .7em;
+      left: -0.9rem;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #0d6efd;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .companyHeader {
+    h3 {
+      font-size: 1.1rem;
+    }
+  }
+
+  .companyIcon {
+    width: 30px;
+    height: 30px;
+  }
+}
