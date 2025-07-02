@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import styles from '../styles/HeroSection.module.scss';
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaEnvelope, FaDownload } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaDownload } from 'react-icons/fa';
 import Link from 'next/link';
 
 const HeroSection = () => {
