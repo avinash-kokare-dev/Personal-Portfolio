@@ -45,13 +45,14 @@ const HeroSection = () => {
   ];
 
   const handleDownload = () => {
-    const resumeUrl = '/Avinash-Kokare.pdf';
-    const link = document.createElement('a');
-    link.href = resumeUrl;
-    link.download = 'Avinash-Kokare.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // const resumeUrl = '/Avinash-Kokare.pdf';
+    // const link = document.createElement('a');
+    // link.href = resumeUrl;
+    // link.download = 'Avinash-Kokare.pdf';
+    // document.body.appendChild(link);
+    // link.click();
+    // document.body.removeChild(link);
+    console.log("Hello...")
   };
 
   return (
